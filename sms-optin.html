@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rose text messages: sign up</title>
+<style>body{font:16px/1.6 -apple-system,system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 20px;color:#1f2933;background:#fff}a{color:#0369a1}
+form{border:1px solid #cbd2d9;border-radius:10px;padding:20px;margin:24px 0}label{display:block;margin:10px 0}input[type=tel]{font:inherit;padding:8px;width:100%;box-sizing:border-box}
+button{font:inherit;padding:10px 18px;border:0;border-radius:8px;background:#0369a1;color:#fff}.small{font-size:14px;color:#52606d}</style>
+</head><body>
+<h1>Sign up for Rose text messages</h1>
+<p>Rose is a personal assistant run by Saad Paracha (sole proprietor). It sends text alerts and replies to one person: the account owner.
+Nobody is added from a list, bought list or third party. There are two ways to sign up, and both need the owner's own action:</p>
+<ol>
+<li><strong>Web form (below):</strong> the owner enters his own mobile number on this page and ticks the consent box. The box is not pre-ticked and is not required for anything else.</li>
+<li><strong>Text keyword:</strong> the owner texts <strong>START</strong> (or any message) from his own phone to Rose's number. Rose replies:
+"Rose alerts: you're signed up for personal assistant alerts and replies. Msg frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out."</li>
+</ol>
+<form onsubmit="event.preventDefault();this.querySelector('.done').hidden=false">
+<label>Mobile number<input type="tel" required placeholder="(555) 555-0123"></label>
+<label><input type="checkbox" required> I agree to receive recurring automated text messages from Rose (Saad Paracha) at this number:
+alerts when my work needs an answer, sports score alerts I set up, and replies to links I text in. Consent is not a condition of any purchase.
+Msg frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out.</label>
+<button type="submit">Sign up</button>
+<p class="done" hidden>Thanks. You'll get a confirmation text.</p>
+</form>
+<p class="small">Sample messages: "NBA: James Harden: 30 PTS through 3 quarters" · "Got it. Your video steps are ready: [link]" · "Your Rose chat is waiting on your answer."</p>
+<p class="small"><a href="sms-terms.html">Terms</a> · <a href="sms-privacy.html">Privacy</a> (mobile numbers and opt-in consent are never shared or sold to third parties for marketing).</p>
+</body></html>
