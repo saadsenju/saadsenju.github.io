@@ -9,12 +9,23 @@
 Saad Paracha, the owner. Nobody is added from a list, a bought list or a third party, and no one else can sign up.</p>
 <div class="box">
 <h2>How sign-up works</h2>
-<p>The owner signs up by texting the keyword <strong>START</strong> from his own mobile phone to the Rose alerts number
+<p>The owner signs up with the form below (his mobile number + an unticked consent box), or by texting the keyword <strong>START</strong> from his own mobile phone to the Rose alerts number
 <strong>+1 (267) 463-2903</strong>.</p>
 <p><strong>By texting START, you agree to receive recurring automated text messages from Saad Paracha - Rose alerts:</strong> live NBA game and
 player score alerts on game days, alerts when your work needs your answer, and replies to video links you text in.
 Message frequency varies: up to about 25 messages on a game day. Message and data rates may apply. Reply HELP for help, STOP to opt out.
 Consent is not a condition of any purchase. <a href="sms-terms.html">Terms</a> · <a href="sms-privacy.html">Privacy</a></p>
+<form id="f" style="margin:16px 0">
+<label style="display:block;margin:8px 0">Mobile phone number you agree to get texts on
+<input id="ph" type="tel" required placeholder="(555) 555-0123" style="font:inherit;padding:8px;width:100%;box-sizing:border-box"></label>
+<label style="display:block;margin:8px 0"><input id="ok" type="checkbox" required> I agree to receive recurring automated text messages from
+Saad Paracha - Rose alerts at the number above (NBA score alerts, work alerts, link replies). Msg frequency varies (up to ~25/day on game days).
+Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Consent is not a condition of purchase.
+<a href="sms-terms.html">Terms</a> · <a href="sms-privacy.html">Privacy</a></label>
+<button type="submit" style="font:inherit;padding:10px 18px;border:0;border-radius:8px;background:#0369a1;color:#fff">Sign up</button>
+</form>
+<p class="small">Pressing Sign up opens your phone's messages app with START addressed to the Rose alerts number; sending it completes sign-up.</p>
+<script>document.getElementById("f").onsubmit=function(e){e.preventDefault();location.href="sms:+12674632903?&body=START";};</script>
 <p>Right after START, the owner gets this confirmation:<br>
 <em>"Saad Paracha - Rose alerts: you're signed up for NBA score alerts, work alerts and link replies. Msg frequency varies (up to ~25/day on game days). Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out."</em></p>
 </div>
